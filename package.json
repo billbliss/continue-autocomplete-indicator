@@ -1,0 +1,28 @@
+{
+  "name": "continue-autocomplete-indicator",
+  "displayName": "Continue Autocomplete Indicator",
+  "description": "Adds a status bar item showing whether Continue autocomplete is enabled or disabled.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/your-repo-url.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.toggleContinueAutocomplete",
+        "title": "Toggle Continue Autocomplete (with indicator)"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.0"
+  }
+}
